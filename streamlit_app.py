@@ -3,7 +3,7 @@ import pandas as pd
 
 st.title('🎈 App Name')
 
-st.write('Hello world!')
+st.write('Пингвинчики')
 
 df = pd.read_csv("https://raw.githubusercontent.com/dataprofessor/data/master/penguins_cleaned.csv")
 with st.expander('Data'):
@@ -16,4 +16,7 @@ with st.expander('Data'):
   st.dataframe(y_raw)
 
 with st.sidebar:
-  st.header("hjfgdfhg:")
+  st.header("Выбери:")
+  island=st.selectbox('Island', ('Torgersen', 'Dream', Biscoe'))
+  bill_length_mm=st.slider('Bill length (mm)',)
+  
